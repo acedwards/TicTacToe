@@ -2,14 +2,14 @@ from random import randint
 
 VALID_SQUARES = ["1", "2", "3", "4", "5", "6", "7", "8", "9"] #valid input for board
 WINNING_COMBOS = {"c1": ["1","2","3"], 
-				  "c2":["4","5", "6"], 
-				  "c3":["7","8","9"], 
-				  "c4":["1", "4", "7"], 
-				  "c5":["2", "5", "8"], 
-				  "c6":["3", "6", "9"], 
-				  "c7":["1", "5", "9"], 
-				  "c8":["3", "5", "7"]
-				  } #combinations of locations that create a line on the board
+		  "c2":["4", "5", "6"], 
+		  "c3":["7", "8", "9"], 
+		  "c4":["1", "4", "7"], 
+		  "c5":["2", "5", "8"], 
+		  "c6":["3", "6", "9"], 
+		  "c7":["1", "5", "9"], 
+		  "c8":["3", "5", "7"]
+		 } #combinations of locations that create a line on the board
 
 CORNER_SQUARES = ["1", "3", "7", "9"]
 CENTRE_SQUARE = "5"
@@ -117,10 +117,10 @@ if __name__ == '__main__':
 	computerSquares = []
 	allPlayedSquares = []
 	board = ["1 | 2 | 3", 
-			"----------", 
-			"4 | 5 | 6",
-			"----------",
-			"7 | 8 | 9"]
+		"----------", 
+		"4 | 5 | 6",
+		"----------",
+		"7 | 8 | 9"]
 	raw_input("Welcome to Tic Tac Toe! Are you ready to play? Press [enter] to get started.")
 	printBoard(board)
 	
